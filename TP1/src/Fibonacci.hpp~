@@ -1,0 +1,2 @@
+int fibonacciRecursif(int nb);
+int fibonacciIteratif(int nb);

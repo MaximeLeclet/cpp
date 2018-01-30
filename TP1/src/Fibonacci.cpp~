@@ -1,0 +1,37 @@
+#include <iostream>
+
+int fibonacciRecursif(int nb)
+{
+
+  if(nb == 0)
+  {
+
+    return 0;
+
+  {
+  else
+  {
+
+    if(nb == 1)
+    {
+
+      return 1;
+      
+    }
+    else
+    {
+
+      return fibonacciRecursif(nb - 1) + fibonacciRecursif(nb -2);
+
+    }
+
+  }
+
+}
+
+int main()
+{
+
+  std::cout << fibonacciRecursif(7);
+
+{
