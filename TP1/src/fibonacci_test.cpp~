@@ -1,0 +1,27 @@
+#include "fibonacci.hpp"
+
+bool testFibonacciRecursif()
+{
+
+  if(fibonacciRecursif(0) != 0) return false;
+  if(fibonacciRecursif(1) != 1) return false;
+  if(fibonacciRecursif(2) != 1) return false;
+  if(fibonacciRecursif(3) != 2) return false;
+  if(fibonacciRecursif(4) != 3) return false;
+
+  return true;
+  
+}
+
+bool testFibonacciIteratif()
+{
+
+  if(fibonacciIteratif(0) != 0) return false;
+  if(fibonacciIteratif(1) != 1) return false;
+  if(fibonacciIteratif(2) != 1) return false;
+  if(fibonacciIteratif(3) != 2) return false;
+  if(fibonacciIteratif(4) != 3) return false;
+
+  return true;
+  
+}

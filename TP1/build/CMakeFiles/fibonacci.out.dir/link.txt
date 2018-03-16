@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++14 -Wall -Wextra -g   CMakeFiles/fibonacci.out.dir/src/main.cpp.o CMakeFiles/fibonacci.out.dir/src/fibonacci.cpp.o CMakeFiles/fibonacci.out.dir/src/fibonacci_test.cpp.o  -o fibonacci.out -rdynamic 
