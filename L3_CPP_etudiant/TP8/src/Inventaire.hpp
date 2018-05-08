@@ -11,4 +11,6 @@ struct Inventaire {
     std::vector<Bouteille> _bouteilles;
 };
 
+std::ostream& operator << (std::ostream& flux, const Inventaire& inventaire);
+
 #endif

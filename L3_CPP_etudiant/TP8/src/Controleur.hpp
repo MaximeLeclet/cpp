@@ -16,7 +16,9 @@ class Controleur {
 
     public:
         Controleur(int argc, char ** argv);
-
+        std::string getTexte();
+        void chargerInventaire();
+        void actualiser();
         // Lance l'application.
         void run();
 };
