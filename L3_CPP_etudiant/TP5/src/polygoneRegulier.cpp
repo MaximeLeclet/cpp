@@ -15,16 +15,22 @@ PolygoneRegulier::PolygoneRegulier(const Couleur & couleur, const Point & centre
 
 }
 
-void PolygoneRegulier::afficher() const {
+void PolygoneRegulier::afficher(const Cairo::RefPtr<Cairo::Context>& context) const {
     std::string affichage = "PolygoneRegulier " + std::to_string(_couleur._r) + "_" + std::to_string(_couleur._g) + "_" + std::to_string(_couleur._b) + " ";
+
+    context->set_source_rgb(1.0, 0.0, 0.0);
+    context->set_line_width(100.0);
+    context->move_to(_points[0]._x, _points[0]._y);
 
     for(int i = 0; i < _nbPoints; i++) {
 
         affichage += std::to_string(_points[i]._x) + "_" + std::to_string(_points[i]._y) + " ";
+        context->line_to(_points[i]._x, _points[i]._y);
 
     }
 
     std::cout << affichage << std::endl;
+    context->line_to(_points[0]._x, _points[0]._y);
 
 }
 

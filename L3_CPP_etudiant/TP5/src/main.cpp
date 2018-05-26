@@ -1,4 +1,5 @@
 #include <iostream>
+#include <gtkmm.h>
 #include "figureGeometrique.hpp"
 #include "ligne.hpp"
 #include "polygoneRegulier.hpp"
@@ -10,8 +11,5 @@ int main(int argc, char ** argv) {
 
     ViewerFigures viewerFigures(argc, argv);
     viewerFigures.run();
-
-    ZoneDessin zoneDessin;
-    
 
 }

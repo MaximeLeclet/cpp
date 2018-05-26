@@ -14,7 +14,7 @@ public:
     const std::string & getTitre() const;
     const std::string & getAuteur() const;
     int getAnnee() const;
-    bool operator<(const & Livre livre);
+    virtual bool operator<(const & Livre livre);
     bool operator==(const & Livre livre);
     std::ostream& operator<<(std::ostream& flux, const Livre& livre);
     std::istream& operator>>(std::istream& flux, Livre& livre);
